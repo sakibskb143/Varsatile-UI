@@ -88,6 +88,10 @@
         width: 100%;
         height: auto;
     }
+    .team-image-container {
+        grid-template-columns: repeat(1, 1fr);
+        place-items:center;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
@@ -106,6 +110,10 @@
         max-width: 263px;
         margin-left: 20px;
 
+    }
+
+    .team-image-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
