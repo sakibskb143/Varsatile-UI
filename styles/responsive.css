@@ -70,6 +70,24 @@
         gap: 30px;
     }
 
+    .recovery-section {
+        flex-direction: column;
+
+    }
+
+    .recovery-content {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .recovery-image-container {
+        max-width: 100%;
+    }
+
+    .recovery-image {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
@@ -83,4 +101,11 @@
         place-items: center;
         gap: 30px;
     }
+
+    .recovery-content {
+        max-width: 263px;
+        margin-left: 20px;
+
+    }
+
 }
