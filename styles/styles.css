@@ -59,7 +59,12 @@ body {
   background-color: var(--primary-color);
   box-sizing: border-box;
 }
-
+/* section{
+  margin-bottom: 100px;
+} */
+ .change-habit-section,.banner-section{
+  margin-bottom: 100px;
+ }
 
 /* navber related styles */
 .menu-container {
@@ -212,4 +217,50 @@ body {
   height: 40px;
   background-color: var(--primary-color);
   border-radius: 50%;
+}
+
+/* change habit action related styles */
+.change-habit-section{
+     display: flex;
+     flex-direction: column;
+     gap: 58px;
+     
+     
+}
+.habit-content{
+  max-width: 671px;
+  margin: 0 auto;
+  text-align: center;
+}
+.habit-title{
+ font-size: 3rem;
+ font-weight: 900;
+ margin-bottom: 15px;
+ color: var(--tertiary-color);
+}
+.habit-description,.training-des{
+ font-size: 0.9rem;
+ font-weight: 400;
+ color: var(--secondary-color);
+ opacity: 0.5;
+}
+.habit-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.habit-cart{
+  max-width: 232px;
+  text-align: center;
+}
+.training-title{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--tertiary-color);
+}
+.training-image{
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+
 }

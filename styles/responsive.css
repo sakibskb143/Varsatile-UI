@@ -5,6 +5,11 @@
         margin-top: 50px;
     }
 
+    .change-habit-section,
+    .banner-section {
+        margin-bottom: 50px;
+    }
+
     .nav-items,
     .banner-section {
         flex-direction: column;
@@ -59,11 +64,23 @@
         font-size: 0.8rem;
     }
 
+    .habit-container {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 30px;
+    }
+
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
     .banner-section {
         flex-direction: column;
         gap: 100px;
+    }
+
+    .habit-container {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 30px;
     }
 }
