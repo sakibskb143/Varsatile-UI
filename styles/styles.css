@@ -1,11 +1,11 @@
 /* google inter fonts and alex brush fonts */
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
 
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} */
+}
 
 /* google inter fonts  */
 
@@ -17,11 +17,13 @@
 }
 
 /* google alex brush fonts */
-.alex-brush-font {
-  font-family: "Alex Brush", cursive;
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
 }
+
+
 
 /* root design */
 :root {
@@ -31,8 +33,7 @@
 }
 
 /* shared styles for website */
-header,
-main {
+body {
   width: 100%;
   background: rgb(0, 0, 0);
 }
@@ -47,25 +48,41 @@ main {
   display: flex;
 }
 
+.btn-primary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 224px;
+  padding: 10px 10px;
+  border-radius: 2.7rem;
+  border: none;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+}
+
 
 /* navber related styles */
-.menu-container{
+.menu-container {
   display: none;
 }
-.navber{
-  justify-content: space-between ;
+
+.navber {
+  justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
+
 .nav-title {
   font-size: 2.2rem;
   font-weight: 800;
   color: var(--primary-color);
 }
 
-.nav-items{
+.nav-items {
   justify-content: center;
   align-items: center;
-  gap:2.5rem
+  gap: 2.5rem
 }
 
 .nav-items li {
@@ -84,4 +101,115 @@ main {
   background-color: var(--primary-color);
   color: white;
   border-radius: 3.9rem;
+}
+
+/*---------------- banner related styless----------------------- */
+.banner-section {
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.banner-content {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+ 
+}
+
+.banner-title {
+  font-size: 4.8rem;
+  font-weight: 900;
+  color: var(--tertiary-color);
+
+}
+
+.banner-title>span {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+
+.banner-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--tertiary-color);
+  opacity: 0.5;
+}
+
+.btn-container {
+  display: flex;
+  gap: 15px;
+}
+
+#btn-black {
+
+  background-color: black;
+  border: 1px solid white;
+
+}
+
+.banner-image-container {
+  position: relative;
+}
+
+.banner-image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.work-out {
+  position: absolute;
+  left: 220px;
+  top: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  width: 193px;
+  padding: 20px;
+}
+
+.work-out h1 {
+  font-size: 2.5rem;
+  color: var(--tertiary-color);
+}
+
+.work-out p {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+
+.video-tutorial {
+  width: 206px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  background: rgba(48, 48, 48, 0.54);
+  position: absolute;
+  right: 250px;
+  bottom: 50px;
+}
+
+.video-tutorial h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--tertiary-color);
+}
+
+.video-tutorial {
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
 }
