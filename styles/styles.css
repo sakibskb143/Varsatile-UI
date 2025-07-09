@@ -66,7 +66,9 @@ body {
 } */
 .change-habit-section,
 .banner-section,
-.recovery-section {
+.recovery-section,
+.exercise-section,
+.meet-team-section {
   margin-bottom: 100px;
 }
 
@@ -364,4 +366,78 @@ body {
   padding: 20px;
   gap: 20px;
   margin-top: 50px;
+}
+
+/* exercise related styles */
+.exercise-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--tertiary-color);
+  margin-bottom: 10px;
+}
+
+.exercise-des {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  opacity: 0.5;
+  margin-bottom: 50px;
+}
+
+.row-one {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+.row-two{
+  display: grid;
+  grid-template-columns:40% 25% 35% ;
+}
+
+.exercise-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.exercise-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay covers full image */
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--tertiary-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3); /* fallback */
+}
+
+/* Color overlays — you can tweak these! */
+.exercise-card.green .overlay-text {
+  background-color: rgba(6, 255, 210, 0.4);
+}
+.exercise-card.red .overlay-text {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+.exercise-card.gray .overlay-text {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+.exercise-card.teal .overlay-text {
+  background-color: rgba(0, 128, 128, 0.4);
+}
+.exercise-card.orange .overlay-text {
+  background-color: rgba(255, 165, 0, 0.4);
+}
+.exercise-card.blue .overlay-text {
+  background-color: rgba(0, 0, 255, 0.4);
 }

@@ -88,10 +88,25 @@
         width: 100%;
         height: auto;
     }
+
     .team-image-container {
         grid-template-columns: repeat(1, 1fr);
-        place-items:center;
+        place-items: center;
     }
+    .row-one {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .row-two {
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .hide{
+        display: none;
+    }
+
+    
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
@@ -114,6 +129,15 @@
 
     .team-image-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .row-one {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .row-two {
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
     }
 
 }
