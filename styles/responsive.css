@@ -1,5 +1,5 @@
 @media screen and (max-width:576px) {
-
+    
     .navber,
     .banner-section {
         margin-top: 50px;
@@ -93,23 +93,39 @@
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
     }
+
     .row-one {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .row-two {
         display: grid;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .hide{
+
+    .hide {
         display: none;
     }
-    .bmi-container{
+
+    .bmi-container {
         flex-direction: column;
         gap: 40px;
     }
-    
+
+    .footer-container {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 102px;
+        padding-bottom: 80px;
+    }
+
+    .middle-div {
+      
+        gap: 110px;
+    }
+
+
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
@@ -133,18 +149,27 @@
     .team-image-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .row-one {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .row-two {
         display: grid;
-        grid-template-columns:repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-    .bmi-container{
+
+    .bmi-container {
         flex-direction: column;
         gap: 60px;
+    }
+
+    .footer-container {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 102px;
+        padding-bottom: 80px;
     }
 
 }
