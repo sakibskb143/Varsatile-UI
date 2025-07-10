@@ -104,6 +104,49 @@
             </div>
         </section>
         <!-- recovery section are ends -->
+        <!-- training and exercise sections are starts -->
+        <section class="exercise-section max-width">
+            <h1 class="exercise-title">Trainings and Exercises</h1>
+            <p class="exercise-des">We believe fitness should be accessible to everyone, everywhere, regardless of
+                income or access to a gym.</p>
+            <div class="exercise-container">
+                <div class="row-one">
+                    <div class="exercise-card green">
+                        <img src="./images/exercise1.jpg" alt="">
+                        <div class="overlay-text">Lorem Ipsum</div>
+                    </div>
+
+                    <div class="exercise-card red">
+                        <img src="./images/exercise2.png" alt="">
+                        <div class="overlay-text">Lorem Ipsum</div>
+                    </div>
+
+                    <div class="exercise-card gray hide">
+                        <img src="./images/exercise3.png" alt="">
+                        <div class="overlay-text">Leg Press...</div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row-two">
+                    <div class="exercise-card teal">
+                        <img src="./images/exercise4.png" alt="">
+                        <div class="overlay-text">Leg Press...</div>
+                    </div>
+
+                    <div class="exercise-card orange">
+                        <img src="./images/exercise5.jpg" alt="">
+                        <div class="overlay-text">Leg Press...</div>
+                    </div>
+
+                    <div class="exercise-card blue hide">
+                        <img src="./images/exercise6.jpg" alt="">
+                        <div class="overlay-text">Leg Press...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- trainning and exercise sections are end -->
         <!-- meet our team section are starts-->
         <section class="meet-team-section max-width">
             <div class="habit-content">
@@ -157,49 +200,69 @@
             </div>
         </section>
         <!-- meet our team section are ends -->
-        <!-- training and exercise sections are starts -->
-        <section class="exercise-section max-width">
-            <h1 class="exercise-title">Trainings and Exercises</h1>
-            <p class="exercise-des">We believe fitness should be accessible to everyone, everywhere, regardless of
-                income or access to a gym.</p>
-            <div class="exercise-container">
-                <div class="row-one">
-                    <div class="exercise-card green">
-                        <img src="./images/exercise1.jpg" alt="">
-                        <div class="overlay-text">Lorem Ipsum</div>
-                    </div>
+        <!-- BMI Calculator are start -->
+        <section class="bmi-section">
+            <div class="bmi-container max-width display-flex">
+                <div class="bmi-chart ">
+                    <h2 class="chart-title">BMI Calculator Chart</h2>
+                    <table class="bmi-table">
 
-                    <div class="exercise-card red">
-                        <img src="./images/exercise2.png" alt="">
-                        <div class="overlay-text">Lorem Ipsum</div>
-                    </div>
-
-                    <div class="exercise-card gray hide">
-                        <img src="./images/exercise3.png" alt="">
-                        <div class="overlay-text">Leg Press...</div>
-                    </div>
+                        <tr>
+                            <th>BMI </th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
                 </div>
+                <div class="bmi-calculator">
+                    <h1 class="bmi-title">Calculate your BMI</h1>
+                    <p class="bmi-des">We believe fitness should be accessible to everyone, everywhere, regardless of
+                        income or access
+                        to a gym.</p>
+                    <form>
+                        <div class="input-row ">
+                            <input type="number" placeholder="Height/cm" required>
+                            <input type="number" placeholder="Weight/kg" required>
 
-                <!-- Row 2 -->
-                <div class="row-two">
-                    <div class="exercise-card teal">
-                        <img src="./images/exercise4.png" alt="">
-                        <div class="overlay-text">Leg Press...</div>
-                    </div>
+                            <input type="number" placeholder="Age" required>
+                            <select required>
+                                <option value="" disabled selected>Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
 
-                    <div class="exercise-card orange">
-                        <img src="./images/exercise5.jpg" alt="">
-                        <div class="overlay-text">Leg Press...</div>
-                    </div>
+                        </div>
+                        <div class="activity">
+                            <select required>
+                                <option value="" disabled selected>Select an activity factor</option>
+                                <option value="low">Low Activity</option>
+                                <option value="moderate">Moderate Activity</option>
+                                <option value="high">High Activity</option>
+                            </select>
+                        </div>
 
-                    <div class="exercise-card blue hide">
-                        <img src="./images/exercise6.jpg" alt="">
-                        <div class="overlay-text">Leg Press...</div>
-                    </div>
+                        <button type="submit" class="btn-primary">Calculate</button>
+                    </form>
                 </div>
             </div>
         </section>
-        <!-- trainning and exercise sections are end -->
+        <!-- BMI Calculator are end -->
+
     </main>
     <footer>
 

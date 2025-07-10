@@ -105,7 +105,10 @@
     .hide{
         display: none;
     }
-
+    .bmi-container{
+        flex-direction: column;
+        gap: 40px;
+    }
     
 }
 
@@ -138,6 +141,10 @@
     .row-two {
         display: grid;
         grid-template-columns:repeat(3,1fr);
+    }
+    .bmi-container{
+        flex-direction: column;
+        gap: 60px;
     }
 
 }
